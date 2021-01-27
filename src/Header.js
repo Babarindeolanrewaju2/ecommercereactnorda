@@ -25,7 +25,7 @@ const Header = () => {
                             <div class="header-top-right">
                                 <div class="same-style-wrap">
                                     <div class="same-style same-style-border track-order">
-                                        <a href="order-tracking.html">Track Your Order</a>
+                                        <a >Track Your Order</a>
                                     </div>
                                     <div class="same-style same-style-border language-wrap">
                                         <a class="language-dropdown-active" >English <i class="icon-arrow-down"></i></a>
@@ -105,7 +105,7 @@ const Header = () => {
                 <div class="row align-items-center">
                     <div class="col-5">
                         <div class="mobile-logo">
-                            <a href="index.html">
+                            <a>
                                 <img alt="" src="assets/images/logo/logo.png" />
                             </a>
                         </div>
