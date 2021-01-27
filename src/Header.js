@@ -71,8 +71,6 @@ const Header = () => {
                                         </li>
                                         <li><a >SHOP </a>
                                         </li>
-                                        <li><a >PAGES </a>
-                                        </li>
                                         <li><a >BLOG </a>
                                         </li>
                                         <li><a>CONTACT </a></li>
