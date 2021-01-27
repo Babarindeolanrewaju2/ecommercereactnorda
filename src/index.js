@@ -1,12 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import ProductDetails from './ProductDetails';
+import {MenuProvider} from './Context';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+  <MenuProvider>
+    <BrowserRouter>
+      <Switch>
+        <Route path="/" exact> 
+          <App />
+        </Route>
+        <Route path="/productdetails" exact>
+          <ProductDetails />
+        </Route>
+      </Switch>
+    </BrowserRouter>
+    </MenuProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

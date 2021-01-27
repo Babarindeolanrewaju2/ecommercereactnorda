@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+/* eslint-disable react/jsx-no-undef */
 import './App.css';
+import Items from './Items';
+import Search from './Search';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div class="shop-area pt-120 pb-120">
+        <div class="container">
+          <div class="row">
+              <Search />
+              <Items />
+            </div>
+          </div>
+        </div>
     </div>
   );
 }
