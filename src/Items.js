@@ -26,7 +26,7 @@ const Items = () => {
                     <a className="active" href="#shop-1" data-toggle="tab"><i className="icon-grid"></i></a>
                     <a href="#shop-2" data-toggle="tab"><i className="icon-menu"></i></a>
                 </div>
-                <p>Showing 1 - 20 of 30 results </p>
+                <p>{filterProducts.length} results </p>
             </div>
             <div className="product-sorting-wrapper">
                 <div className="product-show shorting-style">
