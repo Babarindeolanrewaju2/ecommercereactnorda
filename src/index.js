@@ -6,11 +6,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ProductDetails from './ProductDetails';
 import {MenuProvider} from './Context';
+import Cart from './Cart';
+import Header from './Header';
 
 ReactDOM.render(
   <React.StrictMode>
   <MenuProvider>
     <BrowserRouter>
+       <Header />
       <Switch>
         <Route path="/" exact> 
           <App />
@@ -18,6 +21,9 @@ ReactDOM.render(
         <Route path="/productdetails" exact>
           <ProductDetails />
         </Route>
+        <Route path="/cart" exact>
+          <Cart />
+      </Route>
       </Switch>
     </BrowserRouter>
     </MenuProvider>

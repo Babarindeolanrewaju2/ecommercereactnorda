@@ -208,14 +208,24 @@ const addToCart = (id, color, size , qty) => {
         product.qty = qty;
         product.size = size;
         product.color = color;
+        product.unitprice = qty * product.price
         setCart([...cart, {...product } ])
     }else{
         alert("The product has been added to cart.")
     }
 };
 
+const removeItemFromBasket =(itemId)=> {
+  const items = cart.filter(item => item.id !== itemId)
+  setCart([...items])
+}
+
+const clearCart = () =>{
+  setCart([])
+}
+
   return (
-    <ContextAPI.Provider value={{search,setSearch,sort,setSort,handleTags,filterProducts,setFilterProducts,products,cart,addToCart,handleColor,color,handleSearch,size,categories,handleSize,handleCategories,handleRefineCategories,refineBy,setRefineBy,handleSearchSubmit}}>
+    <ContextAPI.Provider value={{search,setSearch,sort,setSort,removeItemFromBasket, clearCart, handleTags,filterProducts,setFilterProducts,products,cart,addToCart,handleColor,color,handleSearch,size,categories,handleSize,handleCategories,handleRefineCategories,refineBy,setRefineBy,handleSearchSubmit}}>
       {children}
     </ContextAPI.Provider>
   );
